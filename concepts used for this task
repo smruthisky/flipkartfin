@@ -1,0 +1,9 @@
+1.html ,css converted css to tailwind
+2.used api to get data:
+   fetch ,async function ,error handling ,null values handling ,arrow functions
+3.optional chaining
+4.local storage
+5.DOM
+6.cart functionality
+7.search bar functionality:
+  keyboard event , filter 

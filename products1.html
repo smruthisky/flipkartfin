@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css    ">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="flex bg-white h-20">
+        <div class="bg-blue-600 flex  h-14 w-[3400px] ">
+            <div class="flex-row">
+                <img class="ml-44 mt-3 h-5 w-50 " src="images/flipkart-plus_8d85f4.png" alt="logo"> 
+                <div class=" logocaption flex ml-44 ">
+                    <span class="text-white italic  font-normal text-xs">Explore </span>
+                    <span class="italic font-normal pl-1 text-yellow-300 text-xs">Plus </span>
+                    <img class=" h-2.5 w-2.5" src="images/plus_aef861.png" alt="img">
+                </div>        
+            </div>
+            <div>
+                <input id="search-input" class="placeholder-gray-600 rounded-sm  text-sm pl-3 w-[350px]  ml-3 mt-3 h-9 shadow-md bg-white border  " type="text" name="searchbar"  placeholder=" Search for Products, Brands and More ">
+                <button type="submit" id="search-button"><i class="fa fa-search text-white"></i></button>
+                <div id="resultsContainer"></div>
+            </div>
+            <div class="login ml-7 bg-white w-28 h-8 mt-3  rounded-sm   ">
+                <button type="button" class="font-semibold ml-8 mt-1   text-blue-500">Login</button>
+                  </div>
+                  <p class="becomeseller text-white font-semibold mt-4 ml-7">Become a Seller</p>
+                  <p class="More text-white font-semibold mt-4 ml-7">More <span><i class="fa-solid fa-caret-down ml-2 text-white "></i></span> </p>
+                  <div>
+                    <p class="cart text-white font-semibold mt-4 ml-7">Cart<span><i class="fa-solid fa-cart-shopping ml-2 text-white "></i></span></p>
+                    
+                  </div>
+                 
+                  
+        </div>
+       
+    </div>
+    <div class="nodata ">
+        
+    </div>
+    <!-- <div class="skeleton-loading grid grid-cols-5">
+
+    </div> -->
+    <div class="container grid grid-cols-5">
+        
+        <template id="skeleton-loading">
+            <div class=" mb-6 animate-pulse ">
+                <div class="card shadow-lg ml-5 mb-2 w-56 h-80 pr-3">
+                    <div class="gallery ml-9 mt-4 ">
+                        <img id="skeleton-image" class="h-40 w-40 object-contain"  alt="">
+                    </div>
+                    <div class="details w-56 pt-10 pl-4 flex bg-white">
+                        <div class="flex-col ml-4">
+                            <div id="skeletitle"  class="skeleton-title bg-gray-200 h-4 w-24 mb-2 text-sm truncate">
+                                <!-- <p id="sponsored" class="text-gray-400 ml-2 text-sm"></p> -->
+                            </div>
+                            <div class="skeleton-text2 bg-gray-200 h-4 w-36 mb-2"></div>
+                            <div class="flex mt-4">
+                                
+                                <div class="skeleton-text bg-gray-200 h-4 w-20 mr-2"></div>
+                                <div class="skeleton-text bg-gray-200 h-4 w-10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+
+    <div class="content grid grid-cols-5">
+        <!-- Dynamic content will be populated here -->
+    </div>
+
+    <script src="new.js"></script>
+</body>
+</html>

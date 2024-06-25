@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css    ">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex items-center ml-6 mt-20">
+
+        <button data-action="minus"  class=" page-control h-8 w-8  hover:bg-slate-400 rounded" ><i class=" fa-solid fa-arrow-left"></i></button>
+ 
+    <div>
+        <button class="bg-gray-100 page-item  hover:text-blue-700 px-2 " data-index="0" >1</button>
+        <button class="bg-gray-100 page-item  hover:text-blue-700 px-2"data-index="1" >2</button>
+        <button class="bg-gray-100 page-item  hover:text-blue-700 px-2" data-index="2">3</button>
+        <button class="bg-gray-100 page-item  hover:text-blue-700 px-2" data-index="3">4</button>
+    </div>
+    <button data-action="plus" class=" page-control h-8 w-8 hover:bg-slate-400 rounded"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<script>
+    window.addEventListener("DOMContentLoaded",
+     ()=>{
+        const pageItems=document.querySelectorAll('.page-item')
+        const pageControls=document.querySelectorAll('.page-control')
+       console.log(pageControls)
+        let activeIdx=0;
+        makeactive(pageItems[activeIdx]);
+
+        pageItems.forEach(el =>{
+            el.addEventListener('click', 
+            (event)=>{
+                makeinactive(pageItems[activeIdx])
+                activeIdx=event.target.dataset.index
+                makeactive(pageItems[activeIdx])
+                // console.log(event.target.dataset.index);
+            });
+        });
+        pageControls.forEach(el=>{
+        el.addEventListener('click',
+        (event)=>{
+          const diff=el.dataset.action==='plus'? +1: -1;
+          const newIdx=activeIdx + diff;
+          console.log(newIdx)
+          if((newIdx>=pageItems.length) || (newIdx<0)) return;
+          makeinactive(pageItems[activeIdx])
+          makeactive(pageItems[newIdx])
+          activeIdx=newIdx
+          
+        })
+    })
+    });
+    
+    function makeactive(ele) {
+    ele.classList.add('bg-gray-200', 'text-blue-800');
+    ele.classList.remove('hover:bg-gray-300');
+}
+ function makeinactive(ele){
+    ele.classList.remove('bg-gray-200','text-blue-800')
+    ele.classList.add('hover:bg-gray-300' )
+ }
+
+</script>
+</body>
+</html>

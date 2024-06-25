@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="flipkartlogo.png">
+        <title>Flipkart</title>
+        <!-- <link rel="stylesheet" href="flipkart.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css
+        ">
+        <link rel="stylesheet" href="tailwin.css">
+        
+        <body class="bg-gray-100">
+            <div class="flex bg-white h-20">
+                <div>
+                    <img class="mx-10 mt-5 " src="images/fkheaderlogo_exploreplus-44005d.svg" alt="logo">
+                </div>
+                <div>
+                    <input class="placeholder-gray-500 px-4 rounded-md w-[450px]    mt-5 h-10  bg-blue-50    " type="text" name="searchbar"  placeholder=" Search for Products, Brands and More ">
+                </div>
+                <div class="group">
+                
+                <div  class=" flex mt-5 ml-6 text-blue-500 w-[100px] h-10 rounded-md py-2 hover:text-black  " >
+                    <i class="fa-solid fa-user  mt-1 ml-2 mr-2  " ></i>
+                    <span class="text-black">Login</span>
+                    <i class="fa-solid fa-caret-down mt-1 ml-2"></i>
+                    
+                </div>
+               
+                <div class="hidden group-hover:block shadow-lg w-70 mt-4 absolute rounded-md bg-white">
+                        <a href="#" class="text-gray-700 hover:bg-gray-300 py-2 px-4">New user? <span id="Signup" class="text-blue-500">Sign up</span></a>
+                        <hr class="w-full border-gray-300 my-2">
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4"><i class="far fa-user mr-2 text-blue-500"></i>Profile</a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4"><i class="fas fa-indian-rupee-sign mr-2 text-blue-500"></i>GiftCards</a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4"><i class="fas fa-box mr-2 text-blue-500"></i>Rewards</a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4"><i class="far fa-heart mr-2 text-blue-500"></i>WishList</a>
+                    </div>
+                </div>
+
+                <div class="mt-7 ml-10 ">
+                    <i class="fa-solid fa-cart-shopping text-blue-500 "> </i>
+                    <span class=" px-2">Cart</span>
+                    
+                </div>
+                <div class="mt-7 ml-14">
+                    <i class="fa-solid fa-shop text-blue-500"></i>
+                    <span class="px-2">Become a seller</span>
+
+                </div>
+                    <div class="group">
+                    <i  class="  fa-solid fa-ellipsis-vertical mt-8 ml-24 "></i>
+                    <div class="  hidden group-hover:block shadow-lg rounded-md w-50 right-0 mt-3  absolute bg-white">
+                        
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 text-sm"><i class="fa-regular fa-bell mr-2 text-blue-500"></i>Notifications & preferences </a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 text-sm"><i class="fa-solid fa-headphones mr-2 text-blue-500"></i>24 x 7 Customer care</a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 text-sm"><i class="fa-solid fa-chart-line mr-2 text-blue-500"></i>Advertise</a>
+                        <a href="#" class="flex items-center text-gray-700 hover:bg-gray-300 py-2 px-4 text-sm"><i class="fa-solid fa-download mr-2 text-blue-500"></i> Download app</a>
+                    </div>
+                </div>
+                
+               
+            </div >
+
+    </div>
+ <div class="flex mt-3 bg-white h-[130px] mr-4 ml-4">
+    <div class="grocery mt-6 ml-10">
+        <img class="h-[64px] w-[64px]" src="images/surf-ezgif.com-webp-to-png-converter.png " alt="surfexel">
+        <span class="flex  px-2 font-medium text-sm">Grocery</span>
+
+    </div>
+    <div class="mobile mt-6 ml-14">
+        <img class="h-[64px] w-[64px] " src="images/phone-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-2 font-medium text-sm">Mobile</span>
+    </div>
+    <div class="fashion mt-6 ml-14">
+        <img class="h-[64px] w-[64px] " src="images/dress-ezgif.com-webp-to-png-converter.png" alt="dress image">
+        
+        <div class=" flex-col group">
+            <span class="px-2 font-medium text-sm">Fashion</span>
+            <i class="fa-solid fa-caret-down  mt-2 absolute  "></i>
+            <div id="fashionlist" class="  hidden group-hover:block shadow-lg rounded-md w-50  mt-1  absolute bg-white">
+                        
+                <!-- <a href="products.html" class="flex items-center text-gray-500 hover:text-black py-2 px-4 text-sm">Men's top wear </a>
+                <a href="#" class="flex items-center text-gray-500 hover:text-black py-2 px-4 text-sm">Men's bottom wear</a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Women ethinic </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Women western </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Men Footwear </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Women Footwear </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Watches & accessories </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Bags ,Luggage & suitcase </a> -->
+            </div>
+
+        </div>
+        
+    </div>
+    <div class="Electronics mt-6 ml-14">
+        <img class="h-[64px] w-[64px] ml-4" src="images/laptop-ezgif.com-webp-to-png-converter.png" alt="electronics image">
+        <div class=" flex-col group">
+            <span class="px-2 font-medium text-sm">Electronics</span>
+            <i class="fa-solid fa-caret-down  mt-2 absolute  "></i>
+            <div id="electronicslist" class="  hidden group-hover:block shadow-lg rounded-md w-50  mt-1 absolute bg-white">
+<!--                         
+                <a href="#" class="flex items-center text-gray-500 hover:text-black py-2 px-4 text-sm">Audio </a>
+                <a href="#" class="flex items-center text-gray-500 hover:text-black py-2 px-4 text-sm">Gaming</a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Peripherals </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Electronics GST store </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Laptop accessories </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm"> Laptop & Desktop </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Mobile accessories </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Powerbank </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Smart home automation </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Smart wearables </a>
+                <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Storage </a>
+                      <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Tablets </a>
+            <a href="#" class="flex items-center text-gray-500  hover:text-black py-2 px-4 text-sm">Health & personal care </a> -->
+        </div>  
+        </div>
+        
+    </div>
+    <div class="furniture mt-6 ml-14">
+        <img class="h-[64px] w-[64px] ml-4 " src="images/furniture-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-2 font-medium text-sm">Home & Furniture</span>
+    </div>
+    <div class=" mt-6 ml-11">
+        <img class="h-[64px] w-[64px] " src="images/appliances-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-2 font-medium text-sm">Appliances</span>
+    </div>
+    <div class=" mt-6 ml-14">
+        <img class="h-[64px] w-[64px] " src="images/travel-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-2 font-medium text-sm">Travel</span>
+
+    </div>
+    <div class=" mt-6 ml-14">
+        <img class="h-[64px] w-[64px] " src="images/toys-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-4 font-medium text-sm">Toys</span>
+    </div>
+    <div class=" mt-6 ml-14">
+        <img class="h-[64px] w-[64px] " src="images/bike-ezgif.com-webp-to-png-converter.png" alt="phone image">
+        <span class="px-1 font-medium text-sm">Two wheeler</span>
+    </div>
+
+
+ </div>
+ 
+ <div class="mt-3 mr-4 ml-4 block "> 
+    <img src="images/banner1.jpg" alt="image">
+ </div> 
+ 
+
+ <div class="flex ">
+    <div class=" mt-3 mr-4 ml-4 h-72 w-[1000px] bg-white">
+        <div class="mb-2 ml-7 pt-3 font-semibold text-2xl ">Best of Electronics</div>
+        
+        <div class="flex overflow-x-auto hide-scrollbar  ">
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class="  hover:scale-95 transition-all duration-75  mt-4  object-cover " src="images/camera.png" alt="img">
+                    </div>
+               
+                    <div class="mt-2">
+                        <div class=" text-center text-xs">Camera </div>
+                        <div class=" text-center text-xs font-semibold">From Rs.40056</div>
+                    </div>  
+                </div>
+            </a>
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class=" hover:scale-95 transition-all duration-75 mt-4  object-cover " src="images/sandisk-pendrives.jpg" alt="img">
+                    </div>
+               
+                    <div class="mt-6">
+                        <div class=" text-center text-xs">Pendrive </div>
+                        <div class=" text-center text-xs font-semibold">From Rs.556</div>
+                    </div>  
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class=" hover:scale-95 transition-all duration-75 mt-4  object-cover " src="images/iphone.png" alt="img">
+                    </div>
+               
+                    <div class="mt-8">
+                        <div class=" text-center text-xs">Iphone </div>
+                        <div class=" text-center text-xs font-semibold">From Rs.140056</div>
+                    </div>  
+                </div>
+            </a>
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class=" hover:scale-95 transition-all duration-75 mt-4  object-cover " src="images/printer.png" alt="img">
+                    </div>
+               
+                    <div class="mt-8">
+                        <div class=" text-center text-xs">Printer </div>
+                        <div class=" text-center text-xs font-semibold">Shop Now</div>
+                    </div>  
+                </div>
+            </a>
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class=" hover:scale-95 transition-all duration-75  mt-4  object-cover " src="images/powerbank.png" alt="img">
+                    </div>
+               
+                    <div class="mt-6">
+                        <div class=" text-center text-xs">PowerBank </div>
+                        <div class=" text-center text-xs font-semibold">From Rs.1156</div>
+                    </div>  
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="border rounded-md pl-4 pr-4 pb-2  ml-2  ">
+                    <div class="w-36 relative">     
+                        <img  class=" hover:scale-95 transition-all duration-75 mt-4  object-cover " src="images/camera.png" alt="img">
+                    </div>
+               
+                    <div class="mt-2">
+                        <div class=" text-center text-xs">Camera </div>
+                        <div class=" text-center text-xs font-semibold">From Rs.40056</div>
+                    </div>  
+                </div>
+            </a>
+           <a href="#">
+            <div class="border rounded-mdpl-4 pr-4 pb-2  ml-2  ">
+                <div class="w-36 relative">     
+                    <img  class=" hover:scale-95 transition-all duration-75  mt-4  object-cover " src="images/camera.png" alt="img">
+                </div>
+           
+                <div class="mt-2">
+                    <div class=" text-center text-xs">Camera </div>
+                    <div class=" text-center text-xs font-semibold">From Rs.40056</div>
+                </div>  
+            </div>   
+
+           </a>
+            
+         </div> 
+  
+         
+  </div>
+ 
+    
+   <a href="#">
+    <div class="mt-3 mr-6 ml-2 h-72 w-52 bg-white">
+        <img src="images/banner3.jpg" class="pt-5 pb-5 h-72 w-52" alt="image">
+     </div>
+ </div>
+   </a>
+                
+                    
+     <div class="mt-3 mr-4 ml-4 h-72 w-[1230px] bg-white ">
+
+     </div>
+         <script src="index.js"></script>
+</body>
+      
+            
+
+    </head>
+   
+    
+    
+     
+</html>
